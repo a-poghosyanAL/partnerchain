@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Mulish');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0378bf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #08527e;
+}
+
+.text-shadow {
+  text-shadow: 0px 1px 0px #000000;
+}
+
+.bgImage {
+  background-image: url('src/assets/images/cover-2-lg.png.png');
+}
+.upload label {
+  height: 100%;
+  min-width: 153px;
+}
+
+.filteredShadow {
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+.filteredShadowSort {
+  box-shadow: inset 0px 4px 2px rgba(33, 37, 41, 0.024);
+}
+.filteredShadowButton {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075), inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+.filteredShadowDiv {
+  box-shadow: 0px 0px 13px rgba(62, 44, 90, 0.08);
+}
+.filteredShadowSideBar {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.inter {
+  font-family: 'Inter';
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+.combineTransitions {
+  transition: all 0.5s ease, opacity 2.5s ease;
+}
+
+.ql-syntax {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.ql-editor a {
+  text-decoration: none !important;
+}
+
+.ql-toolbar {
+  max-width: 859px;
+  border: none !important;
+}
+
+.ql-container.ql-snow {
+  max-width: 859px;
+}
+.ql-formats > :first-child {
+  background-color: #495057 !important;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f8f9fa;
+  height: 23px;
+}
+.ql-picker-options {
+  color: black;
+}
+.ql-snow.ql-toolbar .ql-picker-label.ql-active {
+  color: white !important;
+}
+.ql-snow.ql-toolbar .ql-picker-label:hover {
+  color: white !important;
+}
+
+.ql-formats > :first-child .ql-picker-label svg {
+  display: none;
+}
+.ql-formats > :first-child .ql-picker-label {
+  display: inline-block;
+  background-image: url('./assets/icons/arrowDown.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  width: 90px;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #495057 !important;
+}
+.ql-color-picker line polyline {
+  display: none !important;
+}
+.ql-color-picker line {
+  stroke-width: 30 !important;
+}
+.ql-color-picker polyline {
+  display: none !important;
+}
+.ql-color-picker line:last-child {
+  display: none !important;
+}
+.ql-snow .ql-transparent {
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 1134px) {
+  .ql-toolbar {
+    max-width: 650px;
+    border: none !important;
+  }
+
+  .ql-container.ql-snow {
+    max-width: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ql-toolbar {
+    max-width: 720px;
+    border: none !important;
+  }
+
+  .ql-container.ql-snow {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ql-toolbar {
+    max-width: 450px;
+    border: none !important;
+  }
+
+  .ql-container.ql-snow {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .ql-toolbar {
+    max-width: 300px;
+    border: none !important;
+  }
+
+  .ql-container.ql-snow {
+    border: none !important;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .ql-toolbar {
+    max-width: 250px;
+    border: none !important;
+  }
+
+  .ql-container.ql-snow {
+    border: none !important;
+    max-width: 250px;
+  }
+}
+.path path{
+  fill: white;
+}
